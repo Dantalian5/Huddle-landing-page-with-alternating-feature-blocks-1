@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 0.014953271 * (100vw - 23.125rem) + 1.5rem, 2.5rem);
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 0.0074766355 * (100vw - 23.125rem) + 1.25rem, 1.75rem);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 0.0112149533 * (100vw - 23.125rem) + 1.25rem, 2rem);
+}
+
+p.v1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 0.0018691589 * (100vw - 23.125rem) + 1rem, 1.125rem);
+  line-height: 1.5rem;
+}
+
+p.v2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.0037383178 * (100vw - 23.125rem) + 0.875rem, 1.125rem);
+  line-height: 1.3125rem;
+}
+
+p.v3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+p.btn1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 0.0018691589 * (100vw - 23.125rem) + 0.75rem, 0.875rem);
+}
+
+p.btn2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.625rem, 0.0037383178 * (100vw - 23.125rem) + 0.625rem, 0.875rem);
+}
+
+p.btn3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.625rem, 0.0093457944 * (100vw - 23.125rem) + 0.625rem, 1.25rem);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */
