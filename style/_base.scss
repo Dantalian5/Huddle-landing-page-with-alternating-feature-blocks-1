@@ -13,7 +13,7 @@
     $c-n-black: hsl(0,0,0);
     // Gradients
 // Screen Variables
-    $screen-min: 23.125rem;
+    $screen-min: 23.4375rem;
     $screen-max: 90rem;
 // Fonts
 h1{
@@ -38,13 +38,13 @@ p.v3{
     font-weight: 400;
     font-size: 1.125rem
 }
-p.btn1{
+a.btn1{
     @include fluid_text( $screen-min, $screen-max, .75rem, .875rem, $f-open-sans, 700);
 }
-p.btn2{
+a.btn2{
     @include fluid_text( $screen-min, $screen-max, .625rem, .875rem, $f-open-sans, 700);
 }
-p.btn3{
+a.btn3{
     @include fluid_text( $screen-min, $screen-max, .625rem, 1.25rem, $f-open-sans, 700);
 }
 

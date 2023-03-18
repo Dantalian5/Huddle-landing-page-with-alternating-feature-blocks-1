@@ -1,2 +1,12 @@
-
+.l-section{
+    width: clamp(23.125rem, 100%, 90rem);
+    height: auto;
+    padding-inline: 5%;
+    &-header{
+        &__navbar{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 

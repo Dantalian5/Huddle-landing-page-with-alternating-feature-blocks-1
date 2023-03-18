@@ -1,0 +1,21 @@
+.m-navbar{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__logo{
+        min-width: 6.375rem;
+        max-width: 12.5625rem;
+        width: fluid_size( $screen-min, $screen-max, 6.375rem, 12.5625rem);
+    }
+    &__btn{
+        min-width: 6rem;
+        max-width: 12.5rem;
+        width: fluid_size( $screen-min, $screen-max, 6rem, 12.5rem);
+        height: 2em;
+
+        margin-left: auto;
+    }
+}
