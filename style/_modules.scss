@@ -1,21 +1,82 @@
-.m-navbar{
-    width: 100%;
-    height: auto;
-
+.navbar{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    font-size: fluid-size-vw($screen-min, $screen-max, .625rem, .875rem);
+
+    padding-top: 2.4em;
+
     &__logo{
-        min-width: 6.375rem;
-        max-width: 12.5625rem;
-        width: fluid_size( $screen-min, $screen-max, 6.375rem, 12.5625rem);
+        height: 1.6em;
+        & img{
+            height: 100%;
+        }
     }
     &__btn{
-        min-width: 6rem;
-        max-width: 12.5rem;
-        width: fluid_size( $screen-min, $screen-max, 6rem, 12.5rem);
-        height: 2em;
+        text-align: center;
+        font-family: $ff-open-sans;
+        font-weight: $f-bold;
 
         margin-left: auto;
+        padding-inline: 2.5em;
+        padding-block: .5em;
+
+        color: $c-n-Very-Dark-Cyan;
+        background-color: $c-n-white;
+        border-radius: 10em;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
     }
+}
+.header-title{
+    font-family: $ff-poppins;
+    font-weight: $f-semibold;
+    font-size: fluid-size-vw($screen-min, $screen-max, 1.5rem, 2.5rem);
+    text-align: center;
+
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+}
+.header-paragraph{
+    font-family: $ff-open-sans;
+    font-weight: $f-regular;
+    font-size: fluid-size-vw($screen-min, $screen-max, 1rem, 1.125rem);
+    text-align: center;
+
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.header-btn{
+    font-family: $ff-open-sans;
+    font-weight: $f-bold;
+    font-size: fluid-size-vw($screen-min, $screen-max, .75rem, .875rem);
+
+    padding-block: 1em;
+    padding-inline: 5em;
+
+    border-radius: 10em;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+
+    color: $c-n-Very-Pale-Cyan;
+    background-color: $c-p-pink;
+    margin-bottom: 1.5em;
+}
+.header-img{
+    width: 90%;
+}
+
+@media only screen and (min-width: 55.625rem) {
+    .header-title{
+        text-align: start;
+        margin-top: 0;
+    }
+    .header-paragraph{
+        text-align: start;
+    }
+    .header-btn{
+        margin-top: 0;
+    }
+    .header-img{
+        width: 100%;
+    }
+
 }

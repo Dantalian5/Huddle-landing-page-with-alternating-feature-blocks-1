@@ -1,7 +1,6 @@
 //@ Import fonts
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap');
-  $f-open-sans: 'Open Sans', sans-serif;
-  $f-poppins: 'Poppins', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Poppins:wght@600&display=swap');
+
 // Colors:
     // Primary
     $c-p-pink: hsl(322, 100%, 66%);
@@ -15,43 +14,20 @@
 // Screen Variables
     $screen-min: 23.4375rem;
     $screen-max: 90rem;
-// Fonts
-h1{
-    @include fluid_text( $screen-min, $screen-max, 1.5rem, 2.5rem, $f-poppins, 600);
-}
-h2{
-    @include fluid_text( $screen-min, $screen-max, 1.25rem, 1.75rem, $f-poppins, 600);
-}
-h3{
-    @include fluid_text( $screen-min, $screen-max, 1.25rem, 2rem, $f-poppins, 600);
-}
-p.v1{
-    @include fluid_text( $screen-min, $screen-max, 1rem, 1.125rem, $f-open-sans, 400);
-    line-height: 1.5rem;
-}
-p.v2{
-    @include fluid_text( $screen-min, $screen-max, .875rem, 1.125rem, $f-open-sans, 400);
-    line-height: 1.3125rem;
-}
-p.v3{
-    font-family: $f-open-sans;
-    font-weight: 400;
-    font-size: 1.125rem
-}
-a.btn1{
-    @include fluid_text( $screen-min, $screen-max, .75rem, .875rem, $f-open-sans, 700);
-}
-a.btn2{
-    @include fluid_text( $screen-min, $screen-max, .625rem, .875rem, $f-open-sans, 700);
-}
-a.btn3{
-    @include fluid_text( $screen-min, $screen-max, .625rem, 1.25rem, $f-open-sans, 700);
-}
+// Fonts    
+    $ff-open-sans: 'Open Sans', sans-serif;
+    $ff-poppins: 'Poppins', sans-serif;
+    $f-regular: 400;
+    $f-semibold: 600;
+    $f-bold: 700;
+
 
 
 body{ 
     width: 100%;
     min-height: 100vh;
-    background-color: white;
+    min-height: 100svh;
+    background-color: $c-n-white;
+    overflow: hidden;
 }
 
