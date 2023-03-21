@@ -33,7 +33,7 @@
     text-align: center;
 
     width: 80%;
-    margin-top: auto;
+    margin-top: 2.0em;
     margin-bottom: 1.5rem;
 }
 .header-paragraph{
@@ -58,7 +58,6 @@
 
     color: $c-n-Very-Pale-Cyan;
     background-color: $c-p-pink;
-    margin-bottom: 1.5em;
 }
 .header-img{
     width: 90%;
@@ -71,9 +70,6 @@
     }
     .header-paragraph{
         text-align: start;
-    }
-    .header-btn{
-        margin-top: 0;
     }
     .header-img{
         width: 100%;

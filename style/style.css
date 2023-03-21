@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
   min-height: 100svh;
   background-color: hsl(0, 0%, 100%);
-  overflow: hidden;
 }
 
 .section {
@@ -98,7 +97,7 @@ body {
   font-size: clamp(1.5rem, 0.0150234742 * (100vw - 23.4375rem) + 1.5rem, 2.5rem);
   text-align: center;
   width: 80%;
-  margin-top: auto;
+  margin-top: 2em;
   margin-bottom: 1.5rem;
 }
 
@@ -121,7 +120,6 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   color: hsl(193, 100%, 96%);
   background-color: hsl(322, 100%, 66%);
-  margin-bottom: 1.5em;
 }
 
 .header-img {
@@ -135,9 +133,6 @@ body {
   }
   .header-paragraph {
     text-align: start;
-  }
-  .header-btn {
-    margin-top: 0;
   }
   .header-img {
     width: 100%;
