@@ -45,6 +45,10 @@ body {
   flex-direction: column;
 }
 
+.main {
+  padding-block: 10%;
+}
+
 /*.navbar{
     display: flex;
     align-items: center;
@@ -329,14 +333,15 @@ body {
   margin-inline: auto;
   margin-block: 3.125rem 1rem;
 }
+.hero__text__item {
+  text-align: center;
+}
 .hero__title {
   font-size: clamp(1.5rem, 0.0150234742 * (100vw - 23.4375rem) + 1.5rem, 2.5rem);
-  text-align: center;
   margin-bottom: 1.5rem;
 }
 .hero__info {
   font-size: clamp(1rem, 0.0018779343 * (100vw - 23.4375rem) + 1rem, 1.125rem);
-  text-align: center;
   color: hsl(192, 100%, 9%);
   margin-bottom: 2rem;
 }
@@ -348,6 +353,35 @@ body {
   margin-inline: auto;
 }
 
+.card {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.08);
+  background-color: hsl(0, 0%, 100%);
+  flex-wrap: wrap;
+  padding: 0 2.0625rem;
+}
+.card__img {
+  width: 85%;
+  margin: 3.5rem auto;
+}
+.card__text {
+  flex-direction: column;
+  align-items: center;
+}
+.card__text__item {
+  text-align: center;
+  width: 90%;
+}
+.card__title {
+  font-size: clamp(1.25rem, 0.0075117371 * (100vw - 23.4375rem) + 1.25rem, 1.75rem);
+  margin-bottom: 0.875rem;
+}
+.card__info {
+  font-size: clamp(0.875rem, 0.0037558685 * (100vw - 23.4375rem) + 0.875rem, 1.125rem);
+  color: hsl(208, 11%, 55%);
+  margin-bottom: 2.25rem;
+}
+
 @media only screen and (min-width: 55.625rem) {
   .hero {
     align-items: center;
@@ -357,10 +391,7 @@ body {
     margin-inline: 0 auto;
     align-items: flex-start;
   }
-  .hero__title {
-    text-align: start;
-  }
-  .hero__info {
+  .hero__text__item {
     text-align: start;
   }
   .hero__img {

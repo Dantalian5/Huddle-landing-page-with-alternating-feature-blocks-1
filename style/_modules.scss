@@ -287,15 +287,16 @@
         width: 87%;
         margin-inline: auto;
         margin-block: 3.125rem 1rem;
+        &__item{
+            text-align: center;
+        }
     }
     &__title{
         font-size: fluid-size-vw($screen-min, $screen-max, 1.5rem, 2.5rem);
-        text-align: center;
         margin-bottom: 1.5rem;
     }
     &__info{
         font-size: fluid-size-vw($screen-min, $screen-max, 1rem, 1.125rem);
-        text-align: center;
         color: $c-n-Very-Dark-Cyan;
         margin-bottom: 2rem;
     }
@@ -308,6 +309,36 @@
     }
 }
 
+.card{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 4px rgba( 0, 0, 0, .08);
+    background-color: $c-n-white;
+
+    flex-wrap: wrap;
+    padding: 0 2.0625rem;
+    &__img{
+        width: 85%;
+        margin: 3.5rem auto;
+    }
+    &__text{
+        flex-direction: column;
+        align-items: center;
+        &__item{
+            text-align: center;
+            width: 90%;
+        }
+    }
+    &__title{
+        font-size: fluid-size-vw($screen-min, $screen-max, 1.25rem, 1.75rem);
+        margin-bottom: .875rem;
+    }
+    &__info{
+        font-size: fluid-size-vw($screen-min, $screen-max, .875rem, 1.125rem);
+        color: $c-n-Grayish-Blue;
+        margin-bottom: 2.25rem;
+    }
+}
+
 
 @media only screen and (min-width: 55.625rem) {
     .hero{
@@ -316,12 +347,9 @@
             width: 38%;
             margin-inline: 0 auto;
             align-items: flex-start;
-        }
-        &__title{
-            text-align: start;
-        }
-        &__info{
-            text-align: start;
+            &__item{
+                text-align: start;
+            }
         }
         &__img{
             width: 55%;
