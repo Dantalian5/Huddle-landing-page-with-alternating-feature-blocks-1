@@ -5,6 +5,9 @@
     text-decoration: none;
     font: inherit;
 }
+*::before, *::after{
+    box-sizing: border-box;
+}
 a{
     color: black;
 }

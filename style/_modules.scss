@@ -1,4 +1,4 @@
-.navbar{
+/*.navbar{
     display: flex;
     align-items: center;
     font-size: fluid-size-vw($screen-min, $screen-max, .625rem, .875rem);
@@ -45,10 +45,9 @@
     width: 90%;
     margin-bottom: 2rem;
 }
-.header-btn{
+.cta-btn{
     font-family: $ff-open-sans;
     font-weight: $f-bold;
-    font-size: fluid-size-vw($screen-min, $screen-max, .75rem, .875rem);
 
     padding-block: 1em;
     padding-inline: 5em;
@@ -58,10 +57,77 @@
 
     color: $c-n-Very-Pale-Cyan;
     background-color: $c-p-pink;
+    &--header{
+        font-size: fluid-size-vw($screen-min, $screen-max, .75rem, .875rem);
+    }
+    &--card{
+        font-size: fluid-size-vw($screen-min, $screen-max, .625rem, 1.25rem);
+    }
 }
 .header-img{
     width: 90%;
 }
+.card{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 4px rgba( 0, 0, 0, .08);
+    background-color: $c-n-white;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+}
+.info-card{
+    width: 97%;
+    margin-block: 0 2.5rem;
+    margin-inline: auto;
+    padding: 2.25rem;    
+    &__img{
+        width: 93%;
+        margin-inline: auto;
+        margin-block: 1.25rem;
+    }
+    &__txt{
+        &__title{
+            font-family: $ff-poppins;
+            font-weight: $f-semibold;
+            font-size: fluid-size-vw($screen-min, $screen-max, 1.25rem, 1.75rem);
+
+            text-align: center;
+            color: $c-n-Very-Dark-Cyan;
+            margin-bottom: .8125rem;
+        }
+        &__info{
+            font-family: $ff-open-sans;
+            font-weight: $f-regular;
+            font-size: fluid-size-vw($screen-min, $screen-max, .875rem, 1.125rem);
+
+            text-align: center;
+            color: $c-n-Grayish-Blue;
+        }
+    }
+}
+.cta-card{
+    width: fit-content;
+    margin-inline: auto;
+    flex-direction: column;
+    &__title{
+        font-family: $ff-poppins;
+        font-weight: $f-semibold;
+        font-size: fluid-size-vw($screen-min, $screen-max, 1.25rem, 2rem);
+
+        text-align: center;
+        color: $c-n-Very-Dark-Cyan;
+        
+    }
+
+}
+.cta-btn--card{
+    margin-inline: 4rem;
+}
+
+
 
 @media only screen and (min-width: 55.625rem) {
     .header-title{
@@ -74,5 +140,192 @@
     .header-img{
         width: 100%;
     }
+    .info-card{
+        &__container{
+            flex: 1;
+            padding-left: 8%;
+        }
+        &__img{
+            width: 85%;
+            margin-inline: 0;
+        }
+        &__txt{
+            &__title{
+                text-align: start;
+            }
+            &__info{
+                text-align: start;
+            }
+        }
 
+        &[data-direction="reverse"]{
+            flex-direction: row-reverse;
+            & .info-card__img{
+                margin-inline: auto 0;
+            }
+        }
+    }
+
+}*/
+//--------------------------------------------------------------
+/*
+.title{
+
+}
+.paragraph{
+
+}
+.btn{ /* button-module 
+    text-align: center;
+    font-family: $ff-open-sans;
+    font-weight: $f-bold;
+
+    border-radius: 10em;
+    &--nb{ /* button-module for navbar layout 
+        padding-inline: 4em;
+        padding-block: 1em;
+
+        color: $c-n-Very-Dark-Cyan;
+        background-color: $c-n-white;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    }
+    &--cta{ /* button-module for call to action
+        padding-block: 1em;
+        padding-inline: 5em;        
+
+        color: $c-n-Very-Pale-Cyan;
+        background-color: $c-p-pink;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        &--header{
+            font-size: fluid-size-vw($screen-min, $screen-max, .75rem, .875rem);
+        }
+        &--card{
+            font-size: fluid-size-vw($screen-min, $screen-max, .625rem, 1.25rem);
+        }
+    }
+}
+.logo{
+    height: 100%;
+}
+
+.navbar{ /* navbar layout 
+    padding-top: 2.4em;
+    font-size: fluid-size-vw($screen-min, $screen-max, .625rem, .875rem);
+ 
+    &__mc-logo{ /* navbar-logo-module-container 
+        height: 2em;
+    }
+    &__mc-btn{ /* navbar-button-module-container
+        margin-left: auto;
+    }
+}*/
+
+//------------------------------------------------------------------
+
+.title{
+    font-family: $ff-poppins;
+    font-weight: $f-semibold;
+    color: $c-n-Very-Dark-Cyan;
+}
+.paragraph{
+    font-family: $ff-open-sans;
+    font-weight: $f-regular;
+}
+
+.btn{ 
+    display: inline-block;
+
+    text-align: center;
+    font-family: $ff-open-sans;
+    font-weight: $f-bold;
+
+    border-radius: 10em;
+    &--nb{ 
+        padding-inline: 3em;
+        padding-block: .8em;
+
+        color: $c-n-Very-Dark-Cyan;
+        background-color: $c-n-white;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    }
+    &--cta{
+        padding-block: 1em;
+        padding-inline: 5em;        
+
+        color: $c-n-Very-Pale-Cyan;
+        background-color: $c-p-pink;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+         
+        &--card{
+            font-size: fluid-size-vw($screen-min, $screen-max, .625rem, 1.25rem);
+        }
+    }
+}
+.logo-nb{
+    height: 100%;
+}
+
+.navbar{ // navigation bar module
+    font-size: fluid-size-vw($screen-min, $screen-max, .625rem, .875rem);
+    padding-top: 2em;
+    align-items: center;
+    &__logo{
+        height: 2em;
+    }
+    &__btn{
+        margin-left: auto;
+    }
+}
+.hero{
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    padding-block: 1.875rem;
+    &__text{
+        flex-direction: column;
+        align-items: center;
+        width: 87%;
+        margin-inline: auto;
+        margin-block: 3.125rem 1rem;
+    }
+    &__title{
+        font-size: fluid-size-vw($screen-min, $screen-max, 1.5rem, 2.5rem);
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &__info{
+        font-size: fluid-size-vw($screen-min, $screen-max, 1rem, 1.125rem);
+        text-align: center;
+        color: $c-n-Very-Dark-Cyan;
+        margin-bottom: 2rem;
+    }
+    &__button{
+        font-size: fluid-size-vw($screen-min, $screen-max, .75rem, .875rem);
+    }
+    &__img{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+
+@media only screen and (min-width: 55.625rem) {
+    .hero{
+        align-items: center;
+        &__text{
+            width: 38%;
+            margin-inline: 0 auto;
+            align-items: flex-start;
+        }
+        &__title{
+            text-align: start;
+        }
+        &__info{
+            text-align: start;
+        }
+        &__img{
+            width: 55%;
+            margin-inline: auto 0;
+        }
+    }
 }
