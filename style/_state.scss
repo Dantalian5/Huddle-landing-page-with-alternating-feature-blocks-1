@@ -1,15 +1,10 @@
-/*.navbar{
-    &__btn{        
-        &:active{
-            transform: scale(.9);
-            box-shadow: 0px 1px .5px 0px rgba(0, 0, 0, 0.15);
-        }
+.btn{        
+    &--nb:active{
+        transform: scale(.9);
+        box-shadow: 0px 1px .5px 0px rgba(0, 0, 0, 0.15);
     }
-}
-.cta-btn{        
-        &:active{
+    &--cta:active{
             transform: scale(.96);
             box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
-        }
     }
-*/
+}
