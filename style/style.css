@@ -46,69 +46,13 @@ body {
 }
 
 .main {
-  padding-block: 10%;
+  -webkit-padding-before: 10%;
+          padding-block-start: 10%;
+  -webkit-padding-after: max(14.375rem, 20%);
+          padding-block-end: max(14.375rem, 20%);
+  position: relative;
 }
 
-/*
-.cta-card{
-    width: fit-content;
-    margin-inline: auto;
-    flex-direction: column;
-    &__title{
-        font-family: $ff-poppins;
-        font-weight: $f-semibold;
-        font-size: fluid-size-vw($screen-min, $screen-max, 1.25rem, 2rem);
-
-        text-align: center;
-        color: $c-n-Very-Dark-Cyan;
-
-    }
-
-}
-.cta-btn--card{
-    margin-inline: 4rem;
-}
-
-
-
-@media only screen and (min-width: 55.625rem) {
-    .header-title{
-        text-align: start;
-        margin-top: 0;
-    }
-    .header-paragraph{
-        text-align: start;
-    }
-    .header-img{
-        width: 100%;
-    }
-    .info-card{
-        &__container{
-            flex: 1;
-            padding-left: 8%;
-        }
-        &__img{
-            width: 85%;
-            margin-inline: 0;
-        }
-        &__txt{
-            &__title{
-                text-align: start;
-            }
-            &__info{
-                text-align: start;
-            }
-        }
-
-        &[data-direction="reverse"]{
-            flex-direction: row-reverse;
-            & .info-card__img{
-                margin-inline: auto 0;
-            }
-        }
-    }
-
-}*/
 .title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -140,9 +84,6 @@ body {
   color: hsl(193, 100%, 96%);
   background-color: hsl(322, 100%, 66%);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-}
-.btn--cta--card {
-  font-size: clamp(0.625rem, 0.0093896714 * (100vw - 23.4375rem) + 0.625rem, 1.25rem);
 }
 
 .logo-nb {
@@ -194,13 +135,15 @@ body {
 }
 
 .card {
-  border-radius: 1rem;
-  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.08);
-  background-color: hsl(0, 0%, 100%);
   flex-wrap: wrap;
   align-items: center;
   padding: 0 2.0625rem;
   margin-bottom: 2.5rem;
+}
+.card--shadow {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.08);
+  background-color: hsl(0, 0%, 100%);
 }
 .card__img {
   width: 85%;
@@ -222,6 +165,30 @@ body {
 .card__info {
   font-size: clamp(0.875rem, 0.0037558685 * (100vw - 23.4375rem) + 0.875rem, 1.125rem);
   color: hsl(208, 11%, 55%);
+}
+
+.cta-box {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline: 2%;
+  flex-direction: column;
+  align-items: center;
+}
+.cta-box__title {
+  font-size: clamp(1.25rem, 0.0112676056 * (100vw - 23.4375rem) + 1.25rem, 2rem);
+  letter-spacing: -5%;
+  text-align: center;
+  margin-block: 2em 1em;
+}
+.cta-box__btn {
+  font-size: clamp(0.625rem, 0.0093896714 * (100vw - 23.4375rem) + 0.625rem, 1.25rem);
+  margin-bottom: 2.5em;
 }
 
 @media only screen and (min-width: 55.625rem) {
