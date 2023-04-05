@@ -15,6 +15,10 @@ a {
   color: black;
 }
 
+ul, li {
+  list-style: none;
+}
+
 img,
 svg {
   display: block;
@@ -48,9 +52,14 @@ body {
 .main {
   -webkit-padding-before: 10%;
           padding-block-start: 10%;
-  -webkit-padding-after: max(14.375rem, 20%);
-          padding-block-end: max(14.375rem, 20%);
+  -webkit-padding-after: max(12.5rem, 20%);
+          padding-block-end: max(12.5rem, 20%);
   position: relative;
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 6.25rem;
 }
 
 .title {
@@ -169,12 +178,12 @@ body {
 
 .cta-box {
   position: absolute;
-  bottom: -5%;
+  bottom: -3%;
   left: 50%;
   transform: translateX(-50%);
-  width: -moz-max-content;
-  width: max-content;
-  max-width: 100%;
+  width: 55%;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin-inline: auto;
   padding-inline: 2%;
   flex-direction: column;
@@ -189,6 +198,35 @@ body {
 .cta-box__btn {
   font-size: clamp(0.625rem, 0.0093896714 * (100vw - 23.4375rem) + 0.625rem, 1.25rem);
   margin-bottom: 2.5em;
+}
+
+.logo-ft {
+  filter: brightness(0) saturate(100%) invert(1);
+  font-size: clamp(1.6875rem, 0.0112676056 * (100vw - 23.4375rem) + 1.6875rem, 2.4375rem);
+  height: 1em;
+  margin-block: 1em 1em;
+}
+
+.container {
+  flex-direction: column;
+  color: hsl(0, 0%, 100%);
+}
+.container__contacts__item {
+  align-items: center;
+  margin-bottom: 1.5625rem;
+}
+
+.contact--icon {
+  width: 10%;
+  margin-right: 2%;
+}
+.contact--icon--1 {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+.contact--info {
+  width: 85%;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 55.625rem) {

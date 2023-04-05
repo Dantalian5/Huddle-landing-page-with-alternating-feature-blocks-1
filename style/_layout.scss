@@ -16,7 +16,10 @@
 }
 .main{
     padding-block-start: 10%;
-    padding-block-end: max( 14.375rem, 20%);
+    padding-block-end: max( 12.5rem, 20%);
     position: relative;
-
+}
+.footer{
+    background-color: $c-n-Very-Dark-Cyan;
+    padding-top: 6.25rem;
 }
